@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eagle-blog/eagle-blog.iml" filepath="$PROJECT_DIR$/eagle-blog/eagle-blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eagle-framework/eagle-framework.iml" filepath="$PROJECT_DIR$/eagle-framework/eagle-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eagle-system/eagle-system.iml" filepath="$PROJECT_DIR$/eagle-system/eagle-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eagle-user/eagle-user.iml" filepath="$PROJECT_DIR$/eagle-user/eagle-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eagle-utils/eagle-utils.iml" filepath="$PROJECT_DIR$/eagle-utils/eagle-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eagle-web/eagle-web.iml" filepath="$PROJECT_DIR$/eagle-web/eagle-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eagleBlog.iml" filepath="$PROJECT_DIR$/eagleBlog.iml" />
+    </modules>
+  </component>
+</project>

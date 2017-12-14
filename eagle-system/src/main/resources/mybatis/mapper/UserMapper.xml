@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="UserMapper">
+    <select id="queryAllUser" resultType="com.simon.pojo.User">
+        SELECT *
+        FROM EAGLE_USER
+    </select>
+
+    <select id="queryUserByNameAndPass" parameterType="java.util.Map" resultType="com.simon.pojo.User">
+        SELECT *
+        FROM EAGLE_USER a
+        WHERE a.USER_NAME = #{userName} AND a.USER_PASS = #{passWord}
+    </select>
+</mapper>

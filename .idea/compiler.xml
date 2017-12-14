@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eagle-blog" />
+        <module name="eagle-framework" />
+        <module name="eagle-system" />
+        <module name="eagle-user" />
+        <module name="eagle-utils" />
+        <module name="eagle-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eagle-blog" target="1.8" />
+      <module name="eagle-framework" target="1.8" />
+      <module name="eagle-system" target="1.8" />
+      <module name="eagle-user" target="1.8" />
+      <module name="eagle-utils" target="1.8" />
+      <module name="eagle-web" target="1.8" />
+      <module name="eagleBlog" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
