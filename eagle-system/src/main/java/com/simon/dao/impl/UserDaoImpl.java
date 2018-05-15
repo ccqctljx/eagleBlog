@@ -31,4 +31,14 @@ public class UserDaoImpl implements UserDao {
         map.put("passWord",passWord);
         return sqlSessionTemplate.selectOne("UserMapper.queryUserByNameAndPass",map);
     }
+
+    @Override
+    public User queryUserByName(String userName) {
+        return sqlSessionTemplate.selectOne("UserMapper.queryUserByName",userName);
+    }
+
+    @Override
+    public User queryUserById(String id) {
+        return sqlSessionTemplate.selectOne("UserMapper.queryUserById",id);
+    }
 }

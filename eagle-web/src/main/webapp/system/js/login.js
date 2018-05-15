@@ -1,6 +1,6 @@
 function submitFunc() {
-    var userName = $('#userName').val();
-    var userPass = $('#userPass').val();
+    var userName = $('#username').val();
+    var userPass = $('#password').val();
 
     if(!$.isEmptyStr(userName) || !$.isEmptyStr(userPass)){
         alert('用户名或密码为空。');
@@ -8,8 +8,8 @@ function submitFunc() {
 
     $.ajax({
         type: "POST",
-        url: ctx + "/system/login_login",
-        data: {"userName" : userName , "passWord" : userPass},
+        url: ctx + "/login_login",
+        data: {"userName" : userName , "userPass" : userPass},
         success: function(data){
             console.log('data is ' + data);
             console.log('成功');
@@ -20,3 +20,12 @@ function submitFunc() {
         }
     });
 }
+
+/**
+ * 回车键事件
+ */
+$(document).on("keydown",function(e) {
+    if (e.keyCode == 13) {
+        $("#submit-btn").trigger("click");
+    }
+});

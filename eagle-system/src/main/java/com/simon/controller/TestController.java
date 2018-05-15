@@ -3,6 +3,7 @@ package com.simon.controller;
 import com.simon.pojo.User;
 import com.simon.services.TestDao;
 import com.simon.services.UserService;
+import com.simon.utils.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.stereotype.Controller;
@@ -32,7 +33,8 @@ public class TestController {
         String demo = "";
         List<User> users = userService.queryAllUser();
         for (User user : users) {
-            demo = "用户名是：" + user.getUserName() + "\r\n + 邮箱是：" + user.getEmail();
+            demo = "用户名是：" + user.getUserName() + "\r\n , 邮箱是：" + user.getEmail()+"\r\n";
+            Logger.debug("com.simon.controller.TestController",demo);
         }
         return "hello " + demo;
     }

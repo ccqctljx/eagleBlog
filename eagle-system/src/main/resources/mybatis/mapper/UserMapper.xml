@@ -11,4 +11,17 @@
         FROM EAGLE_USER a
         WHERE a.USER_NAME = #{userName} AND a.USER_PASS = #{passWord}
     </select>
+
+    <select id="queryUserByName" parameterType="java.lang.String" resultType="com.simon.pojo.User">
+        SELECT *
+        FROM EAGLE_USER A
+        WHERE A.USER_NAME = '${_parameter}'
+    </select>
+
+    <select id="queryUserById" parameterType="java.lang.String" resultType="com.simon.pojo.User">
+        SELECT *
+        FROM EAGLE_USER A
+        WHERE A.USER_ID = '${_parameter}'
+    </select>
+
 </mapper>

@@ -12,4 +12,8 @@ public interface UserService {
     List<User> queryAllUser();
 
     User queryUserByNameAndPass(String userName, String passWord);
+
+    User queryUserByName(String userName);
+
+    User queryUserById(String id);
 }

@@ -19,6 +19,21 @@
 
     <dependencies>
         <!--插件 Start-->
+        <!-- Shiro -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-ehcache</artifactId>
+        </dependency>
         <!--Spring MVC Start-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -114,7 +129,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <!--<scope>test</scope>-->
         </dependency>
 
         <!--mybatis about Start-->
@@ -151,6 +166,24 @@
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
         <!--日志 结束-->
+
+        <!--commons 开始-->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <!--commons 结束-->
+
+        <!--ehcache 缓存 开始-->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache-core</artifactId>
+        </dependency>
+        <!--缓存 结束-->
     </dependencies>
 
 </project>

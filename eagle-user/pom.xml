@@ -21,7 +21,6 @@
         <dependency>
             <groupId>com.simon</groupId>
             <artifactId>eagle-system</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

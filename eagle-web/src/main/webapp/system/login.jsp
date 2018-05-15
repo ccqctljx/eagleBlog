@@ -33,9 +33,9 @@
 <div class="page-container">
     <h1>Login</h1>
     <form action="" method="post">
-        <input type="text" name="userName" id="userName" class="username" placeholder="请输入姓名">
-        <input type="password" name="userPass" id="userPass" class="password" placeholder="请输入密码">
-        <button type="submit" onclick="submitFunc()">登录</button>
+        <input type="text" name="username" id="username" class="username" placeholder="请输入姓名">
+        <input type="password" name="password" id="password" class="password" placeholder="请输入密码">
+        <button type="submit" class="button login-btn" onclick="submitFunc()">登录</button>
         <div class="error"><span>+</span></div>
     </form>
     <div class="connect">
@@ -46,8 +46,6 @@
         </p>
     </div>
 </div>
-
-
 </body>
 </html>
 
